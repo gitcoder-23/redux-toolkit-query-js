@@ -2,6 +2,12 @@
 
 This project was bootstrapped with [Deployed App Link RTKQ js](https://github.com/facebook/create-react-app).
 
+# What is Redux-Toolkit-Query
+
+RTK Query is a powerful data fetching and caching tool. It is designed to simplify common cases for loading data in a web application, eliminating the need to hand-write data fetching & caching logic yourself.
+
+RTK Query is an optional addon included in the Redux Toolkit package, and its functionality is built on top of the other APIs in Redux Toolkit.
+
 # Redux-Toolkit-Link for Document
 
 => (https://redux-toolkit.js.org/rtk-query/overview)
