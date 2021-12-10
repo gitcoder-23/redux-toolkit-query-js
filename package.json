@@ -3,7 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "developer": "Prabhat",
-  "you-tut": "",
+  "you-tut": "https://youtu.be/3dju4x4T4Gw",
+  "git": "https://github.com/gitcoder-23/redux-toolkit-query-js.git",
   "dependencies": {
     "@emotion/react": "^11.7.0",
     "@emotion/styled": "^11.6.0",
