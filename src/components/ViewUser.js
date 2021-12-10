@@ -1,5 +1,6 @@
-import { Grid, Paper } from '@mui/material';
+import { Button, Grid, Paper } from '@mui/material';
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { useGetSingleUserByIdQuery } from '../services/UsersService';
 
 const ViewUser = ({ match }) => {
@@ -30,6 +31,9 @@ const ViewUser = ({ match }) => {
             <p>{data?.email}</p>
             <p>{data?.phone}</p>
             <p>{data?.address?.city}</p>
+            <Button component={Link} to={`/`} variant="contained">
+              Go Back
+            </Button>
           </Paper>
         </Grid>
       </Grid>
