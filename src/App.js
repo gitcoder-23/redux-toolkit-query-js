@@ -29,7 +29,9 @@ function App() {
 
           <Route exact path="/polling" component={Quotes} />
           <Route exact path="*">
-            <span style={{ textAlign: 'center' }}>404 Page Not Found!</span>
+            <span style={{ textAlign: 'center' }}>
+              404 Page Not Found! Crud ops. is in underconstruction
+            </span>
           </Route>
         </Switch>
       </Container>
