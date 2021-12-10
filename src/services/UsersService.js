@@ -16,14 +16,9 @@ export const usersApi = createApi({
     }),
 
     getSingleUserById: builder.query({
+      // query: (userId) => `/users/`+ userId,
       query: (userId) => `/users/${userId}`,
     }),
-
-    // getUserById: builder.query({
-    //   // Api last point
-    //   // query: (userId) => `/users/`+ userId,
-    //   query: (userId) => `users/${userId}`,
-    // }),
   }),
 });
 

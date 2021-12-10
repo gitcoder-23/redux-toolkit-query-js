@@ -6,6 +6,8 @@ This project was bootstrapped with [Deployed App Link RTKQ js](https://github.co
 
 => (https://redux-toolkit.js.org/rtk-query/overview)
 
+It does no require actions and reducers
+
 # To start Project
 
 yarn start

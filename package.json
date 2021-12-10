@@ -3,7 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "developer": "Prabhat",
-  "you-tut": "https://youtu.be/3dju4x4T4Gw",
+  "you-tut-fetch-data": "https://youtu.be/3dju4x4T4Gw",
+  "you-tut-pooling": "",
+  "you-tut-crud": "",
   "git": "https://github.com/gitcoder-23/redux-toolkit-query-js.git",
   "dependencies": {
     "@emotion/react": "^11.7.0",
@@ -13,6 +15,7 @@
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
+    "node-sass": "4.14.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-redux": "^7.2.6",
