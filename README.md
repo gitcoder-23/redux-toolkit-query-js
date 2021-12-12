@@ -1,6 +1,6 @@
 # Getting Started with Redux Toolkit Query js
 
-This project was bootstrapped with [Deployed App Link RTKQ js](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Deployed App Link RTKQ js](https://redux-toolkit-query-js.vercel.app/).
 
 # What is Redux-Toolkit-Query
 

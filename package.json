@@ -7,7 +7,7 @@
   "you-tut-pooling": "https://youtu.be/u0VHeiyrEOs",
   "you-tut-crud": "https://youtu.be/6FN-8-0wMZE",
   "git": "https://github.com/gitcoder-23/redux-toolkit-query-js.git",
-  "netlify": "",
+  "vercel-link": "https://redux-toolkit-query-js.vercel.app/",
   "dependencies": {
     "@emotion/react": "^11.7.0",
     "@emotion/styled": "^11.6.0",
