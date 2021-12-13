@@ -10,6 +10,7 @@ import Header from './includes/Header';
 import Quotes from './components/Quotes';
 import { Products } from './components/Products';
 import ViewProduct from './components/ViewProduct';
+import ViewProductByFilter from './components/ViewProductByFilter';
 
 function App() {
   const history = useHistory();
@@ -32,6 +33,11 @@ function App() {
           <Route exact path="/polling" component={Quotes} />
           <Route exact path="/crud" component={Products} />
           <Route exact path="/products/:proId" component={ViewProduct} />
+          <Route
+            exact
+            path="/products/byfilter/:proId"
+            component={ViewProductByFilter}
+          />
           <Route exact path="*">
             <span style={{ textAlign: 'center' }}>
               404 Page Not Found! Crud ops. is in underconstruction

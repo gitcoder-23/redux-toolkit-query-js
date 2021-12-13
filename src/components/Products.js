@@ -11,6 +11,7 @@ import {
   Grid,
 } from '@mui/material';
 import RemoveRedEyeIcon from '@mui/icons-material/RemoveRedEye';
+import PreviewIcon from '@mui/icons-material/Preview';
 import DeleteIcon from '@mui/icons-material/Delete';
 import EditIcon from '@mui/icons-material/Edit';
 import { useGetAllProductsQuery } from '../services/ProductService';
@@ -50,6 +51,13 @@ export const Products = () => {
                       <Typography gutterBottom variant="h5" component="div">
                         {allPro.title}
                       </Typography>
+                      <Button
+                        onClick={() =>
+                          history.push(`/products/byfilter/${allPro?.id}`)
+                        }
+                      >
+                        <PreviewIcon />
+                      </Button>
                       <Typography variant="body2" color="text.secondary">
                         {allPro.description}
                       </Typography>
@@ -60,6 +68,7 @@ export const Products = () => {
                       >
                         <RemoveRedEyeIcon />
                       </Button>
+
                       <Button>
                         <EditIcon />
                       </Button>

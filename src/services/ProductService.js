@@ -13,7 +13,8 @@ export const productApi = createApi({
     }),
 
     getAllProductById: builder.query({
-      query: (proId) => `/products/${proId}`,
+      // query: (proId) => `/products/${proId}`,
+      query: (proId) => `/products/` + proId,
     }),
   }),
 });
