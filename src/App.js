@@ -11,6 +11,7 @@ import Quotes from './components/Quotes';
 import { Products } from './components/Products';
 import ViewProduct from './components/ViewProduct';
 import ViewProductByFilter from './components/ViewProductByFilter';
+import AddProducts from './components/AddProducts';
 
 function App() {
   const history = useHistory();
@@ -32,6 +33,7 @@ function App() {
 
           <Route exact path="/polling" component={Quotes} />
           <Route exact path="/crud" component={Products} />
+          <Route exact path="/addproduct" component={AddProducts} />
           <Route exact path="/products/:proId" component={ViewProduct} />
           <Route
             exact

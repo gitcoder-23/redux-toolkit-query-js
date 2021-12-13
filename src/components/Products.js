@@ -34,53 +34,65 @@ export const Products = () => {
   if (isSuccess) {
     return (
       <>
-        <Grid container mt={3} spacing={2}>
-          {data &&
-            data?.map((allPro) => (
-              <>
-                {' '}
-                <Grid item xs={4} key={allPro.id}>
-                  <Card spacing={4} container sx={{ maxWidth: 345 }}>
-                    <CardMedia
-                      component="img"
-                      alt={allPro.title}
-                      height="140"
-                      image={allPro.image}
-                    />
-                    <CardContent>
-                      <Typography gutterBottom variant="h5" component="div">
-                        {allPro.title}
-                      </Typography>
-                      <Button
-                        onClick={() =>
-                          history.push(`/products/byfilter/${allPro?.id}`)
-                        }
-                      >
-                        <PreviewIcon />
-                      </Button>
-                      <Typography variant="body2" color="text.secondary">
-                        {allPro.description}
-                      </Typography>
-                    </CardContent>
-                    <CardActions>
-                      <Button
-                        onClick={() => history.push(`/products/${allPro?.id}`)}
-                      >
-                        <RemoveRedEyeIcon />
-                      </Button>
+        <div className="pro-div">
+          <Button
+            variant="contained"
+            size="large"
+            style={{ float: 'right' }}
+            onClick={() => history.push('/addproduct')}
+          >
+            Add Product
+          </Button>
+          <Grid container mt={2} spacing={2}>
+            {data &&
+              data?.map((allPro) => (
+                <>
+                  {' '}
+                  <Grid item xs={4} key={allPro.id}>
+                    <Card spacing={4} container sx={{ maxWidth: 345 }}>
+                      <CardMedia
+                        component="img"
+                        alt={allPro.title}
+                        height="140"
+                        image={allPro.image}
+                      />
+                      <CardContent>
+                        <Typography gutterBottom variant="h5" component="div">
+                          {allPro.title}
+                        </Typography>
+                        <Button
+                          onClick={() =>
+                            history.push(`/products/byfilter/${allPro?.id}`)
+                          }
+                        >
+                          <PreviewIcon />
+                        </Button>
+                        <Typography variant="body2" color="text.secondary">
+                          {allPro.description}
+                        </Typography>
+                      </CardContent>
+                      <CardActions>
+                        <Button
+                          onClick={() =>
+                            history.push(`/products/${allPro?.id}`)
+                          }
+                        >
+                          <RemoveRedEyeIcon />
+                        </Button>
 
-                      <Button>
-                        <EditIcon />
-                      </Button>
-                      <Button>
-                        <DeleteIcon />
-                      </Button>
-                    </CardActions>
-                  </Card>
-                </Grid>
-              </>
-            ))}
-        </Grid>
+                        <Button>
+                          <EditIcon />
+                        </Button>
+                        <Button>
+                          <DeleteIcon />
+                        </Button>
+                      </CardActions>
+                    </Card>
+                  </Grid>
+                </>
+              ))}
+          </Grid>
+        </div>
       </>
     );
   }
