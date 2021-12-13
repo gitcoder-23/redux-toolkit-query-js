@@ -30,6 +30,10 @@ yarn add @mui/material @emotion/react @emotion/styled
 
 https://mui.com/
 
+# for Icons
+
+https://mui.com/components/material-icons/
+
 # for style css follow below link
 
 https://emotion.sh/docs/styled
